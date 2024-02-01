@@ -1,3 +1,12 @@
 # Repository Specific
-
+# Phase1
 Phase1/Output
+
+# Phase2
+Phase2/Checkpoints
+Phase2/Logs 
+Phase2/Code/Logs    
+Phase2/Code/data
+# __pycache__ files
+Phase2/Code/Misc/__pycache__/
+Phase2/Code/Network/__pycache__/
