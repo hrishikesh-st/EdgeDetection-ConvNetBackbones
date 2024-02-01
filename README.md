@@ -1,6 +1,6 @@
 # Probabilistic Boundary Detection and Improving Convolutional Networks
 
-### *RBE549: Deep Learning - [Worcester Polytechnic Institute](https://www.wpi.edu/), Spring 2024*
+### *RBE549: Computer Vision - [Worcester Polytechnic Institute](https://www.wpi.edu/), Spring 2024*
 
 ## Project Guidelines:
 The project is divided into two phases. The first phase is to implement a probabilistic boundary detection algorithm. The second phase is to implement and improve the performance of the convolutional backbones using different techniques.
