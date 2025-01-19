@@ -46,7 +46,7 @@ import shutil
 import string
 from termcolor import colored, cprint
 import math as m
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 # import Misc.ImageUtils as iu
 from Network.Network import BaselineNet, BatchNormNet, ResNet, ResNeXT, DenseNet
 from Misc.MiscUtils import *
@@ -191,6 +191,8 @@ def TrainOperation(TrainLabels, NumTrainSamples, ImageSize,
 
         for PerEpochCounter in tqdm(range(NumIterationsPerEpoch)):
             Batch = GenerateBatch(TrainSet, TrainLabels, ImageSize, MiniBatchSize)
+            # Ignore the TrainLabels on line #194
+            # Not used in GenerateBatch function.
             Test_Batch = GenerateBatch(TestSet, TrainLabels, ImageSize, MiniBatchSize)
 
             # Predict output with forward pass
@@ -300,6 +302,7 @@ def main():
     BasePath = "../CIFAR10"
     # Setup all needed parameters including file reading
     DirNamesTrain, SaveCheckPoint, ImageSize, NumTrainSamples, TrainLabels, NumClasses = SetupAll(BasePath, CheckPointPath)
+    import ipdb; ipdb.set_trace()
 
     # Find Latest Checkpoint File
     if LoadCheckPoint==1:
